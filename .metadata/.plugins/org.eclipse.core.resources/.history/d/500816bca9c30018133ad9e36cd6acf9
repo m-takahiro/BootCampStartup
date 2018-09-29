@@ -1,0 +1,20 @@
+package jp.co.netprotections.dto;
+
+/**
+ * リクエストされたJSONをマッピングするDTOです.
+ * @author s.nozaki
+ *
+ */
+public class RequestDto {
+
+	/** ベース文字列 */
+	private String string;
+
+	public String getString() {
+		return string;
+	}
+
+	public void setString(String string) {
+		this.string = string;
+	}
+}

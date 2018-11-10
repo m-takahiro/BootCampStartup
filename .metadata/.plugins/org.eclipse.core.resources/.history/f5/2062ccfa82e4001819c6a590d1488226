@@ -1,0 +1,8 @@
+package jp.co.netprotections.util;
+
+/**
+ * テスト共通のユーティリティを提供します。
+ */
+public class CommonTestUtil {
+
+}

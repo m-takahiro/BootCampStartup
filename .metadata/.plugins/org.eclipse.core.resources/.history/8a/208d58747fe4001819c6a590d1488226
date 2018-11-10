@@ -1,0 +1,30 @@
+package jp.co.netprotections.service;
+
+import org.springframework.stereotype.Service;
+
+import jp.co.netprotections.dto.RequestDto;
+import jp.co.netprotections.dto.ResponseDto;
+
+@Service
+public class MainService {
+
+	public ResponseDto execute(RequestDto dto) {
+
+		// 返却するレスポンスを初期化します.
+		ResponseDto response = new ResponseDto();
+
+		// リクエストの処理判定フラグで処理を実施します.
+		if (dto.isProcessFlag()) {
+			// 文字列を設定します.
+			response.setString("受け取った文字列：" + dto.getString());
+			// 受け取った文字列の文字数を設定します.
+			response.setStrLength(dto.getString().length());
+		} else {
+			// 文字列、および文字列の長さをそれぞれ空および0に設定します.
+			response.setString(null);
+			response.setStrLength(0);
+		}
+		return response;
+	}
+
+}

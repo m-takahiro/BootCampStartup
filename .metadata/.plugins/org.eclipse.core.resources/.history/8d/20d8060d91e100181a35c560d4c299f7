@@ -1,0 +1,15 @@
+package jp.co.netprotections.service;
+
+import org.springframework.stereotype.Service;
+
+import jp.co.netprotections.dto.RequestDto;
+import jp.co.netprotections.dto.ResponseDto;
+
+@Service
+public class MsinService {
+
+	public ResponseDto execute(RequestDto in) {
+		return new ResponseDto();
+	}
+
+}

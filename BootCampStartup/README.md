@@ -59,7 +59,7 @@ Spring BootやJava言語には、人間がプログラムを読むときに参�
     - グループ : `jp.co.netprotections`
     - パッケージ : `jp.co.netprotections`
 - 以下のバージョンおよび依存関係を選択してください。
-    - Spgin Bootバージョン : `1.5.16`
+    - Spgin Bootバージョン : `1.5.16` -> なければ、1.5.xx系ならどのバージョンでも大丈夫です。
     - 依存関係 :
         - Web :
             - web
